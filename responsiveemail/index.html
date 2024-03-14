@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+
+<style>
+
+
+/* Almindelige stilarter */
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.flex_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 2%;
+}
+
+.section_one,
+.section_two {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.section_two:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -18%;
+    width: 2px;
+    height: 175px;
+    background-color: #5B5B5B;
+    border-radius: 5px;
+}
+
+.section_two {
+    margin-left: 20px;
+    flex-direction: column;
+}
+
+.joachim {
+    width: 230px;
+    height: auto;
+    margin-right: 35px;
+}
+
+.e-mail_text {
+    flex-grow: 1;
+}
+
+.logo {
+    width: 140px;
+    height: auto;
+}
+
+.some {
+    width: 180px;
+    height: auto;
+}
+
+.joachim_text {
+    border-bottom: 1px solid #5B5B5B;
+    padding-bottom: 3px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #5B5B5B;
+}
+
+.found_text {
+    line-height: 0;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #232323;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #232323;
+    font-weight: normal;
+}
+
+/* Media queries for skærme mindre end 768px (tablet og mobil i landskabsretning) */
+@media only screen and (max-width: 768px) {
+    .flex_content {
+        flex-direction: column;
+    }
+
+    .section_one,
+    .section_two {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5%;
+    }
+
+    .section_two:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto; /* Centrerer vandret */
+    width: 90%; /* Juster bredden efter dine behov */
+    height: 2px; /* Juster højden efter dine behov */
+    background-color: #5B5B5B;
+    border-radius: 5px;
+    transform: translateY(-50%);
+    top: -120%;
+}
+
+
+    .joachim {
+        width: 120px;
+        margin-bottom: 10px;
+        margin-left: 15%;
+    }
+
+    .e-mail_text p {
+        margin-bottom: 10px;
+        justify-content: baseline;
+    }
+
+    .logo,
+    .some {
+        width: 120px;
+        margin-top: 20px;
+    }
+
+    .joachim_text {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1,
+    h4 {
+        font-size: 14px;
+    }
+}
+
+
+
+
+</style>
+</head>
+<body>
+    <div class="wrapper">
+<div class="flex_content">    
+    <div class="section_one">
+        <img class="joachim" src="img/joachim.png" alt="Joachim-billede">
+        <div class="e-mail_text">
+            <h2 class="joachim_text">Joachim Enggard</h2>
+            <p class="found_text">Founder & CEO</p>
+            <br>
+            <p>Telefon: +45 70404030 </p>
+            <p>Direkte: +45 22100219</p>
+            <p>Webshop: www.PartyVikings.dk</p>
+        </div>
+    </div>
+
+    <div class="section_two">
+        <img class="logo" src="img/party vikings_dk_logo_stor_sort (2).png" alt="Viking-logo">
+        <h4>VI ØNSKER AT GØRE VERDEN TIL ET SJOVERE STED!</h4>
+        <img class="some" src="img/SoMe.png" alt="SoMe-logo">
+    </div>   
+</div>
+</div>
+</body>
+</html>
+
+
+

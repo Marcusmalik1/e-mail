@@ -1,191 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email</title>
 
-<style>
+    <style>
+        /* Inline styling */
+        .joachim {
+            width: 130px;
+            height: 130px;
+            margin-right: 15px;
+        }
 
+        .e-mail_text {
+            font-size: 12px;
+        }
 
-/* Almindelige stilarter */
-.wrapper {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
+        .logo {
+            width: 100px; /* Justeret bredden af logoet */
+            height: auto;
+            display: block; /* Sørger for, at logoet centreres korrekt */
+            margin: 0 auto; /* Centrerer logoet */
+        }
 
-.flex_content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 2%;
-}
+        .some {
+            margin-top: 10px;
+            text-align: center;
+        }
 
-.section_one,
-.section_two {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-}
+        .social {
+            width: 25px;
+            height: 25px;
+            margin-right: 5px;
+        }
 
-.section_two:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -18%;
-    width: 2px;
-    height: 175px;
-    background-color: #5B5B5B;
-    border-radius: 5px;
-}
+        .joachim_text {
+            font-size: 16px;
+        }
 
-.section_two {
-    margin-left: 20px;
-    flex-direction: column;
-}
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #5B5B5B;
+            margin: 5px 0;
+        }
 
-.joachim {
-    width: 230px;
-    height: auto;
-    margin-right: 35px;
-}
+        h4 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #232323;
+            font-weight: normal;
+            font-size: 12px;
+            margin: 5px 0;
+        }
 
-.e-mail_text {
-    flex-grow: 1;
-}
+        /* CSS for at centrere indholdet */
+        .wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo {
-    width: 140px;
-    height: auto;
-}
+        .section_one {
+            display: flex;
+            flex-direction: row;
+        }
 
-.some {
-    width: 180px;
-    height: auto;
-}
+        .section_two {
+            text-align: center; /* Centrerer alt indhold i section_two */
+        }
 
-.joachim_text {
-    border-bottom: 1px solid #5B5B5B;
-    padding-bottom: 3px;
-}
+        /* Media queries for mindre skærme */
+        @media only screen and (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
 
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #5B5B5B;
-}
+            .joachim {
+                width: 120px;
+            }
 
-.found_text {
-    line-height: 0;
-}
-
-h1 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #232323;
-}
-
-h4 {
-    font-family: Arial, Helvetica, sans-serif;
-    color: #232323;
-    font-weight: normal;
-}
-
-/* Media queries for skærme mindre end 768px (tablet og mobil i landskabsretning) */
-@media only screen and (max-width: 768px) {
-    .flex_content {
-        flex-direction: column;
-    }
-
-    .section_one,
-    .section_two {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 5%;
-    }
-
-    .section_two:before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto; /* Centrerer vandret */
-    width: 90%; /* Juster bredden efter dine behov */
-    height: 2px; /* Juster højden efter dine behov */
-    background-color: #5B5B5B;
-    border-radius: 5px;
-    transform: translateY(-50%);
-    top: -120%;
-}
-
-
-    .joachim {
-        width: 120px;
-        margin-bottom: 10px;
-        margin-left: 15%;
-    }
-
-    .e-mail_text p {
-        margin-bottom: 10px;
-        justify-content: baseline;
-    }
-
-    .logo,
-    .some {
-        width: 120px;
-        margin-top: 20px;
-    }
-
-    .joachim_text {
-        font-size: 18px;
-    }
-
-    p {
-        font-size: 14px;
-    }
-
-    h1,
-    h4 {
-        font-size: 14px;
-    }
-}
-
-
-
-
-</style>
+            .logo {
+                width: 80px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="wrapper">
-<div class="flex_content">    
-    <div class="section_one">
-        <img class="joachim" src="img/joachim.png" alt="Joachim-billede">
-        <div class="e-mail_text">
-            <h2 class="joachim_text">Joachim Enggard</h2>
-            <p class="found_text">Founder & CEO</p>
-            <br>
-            <p>Telefon: +45 70404030 </p>
-            <p>Direkte: +45 22100219</p>
-            <p>Webshop: www.PartyVikings.dk</p>
+        <div class="section_one">
+            <img class="joachim" src="https://i.ibb.co/61nbBqB/joachim.png" alt="joachim" border="0">
+            <div class="e-mail_text">
+                <h2 class="joachim_text">Joachim Enggard</h2>
+                <p>Founder & CEO</p>
+                <p>Telefon: +45 70404030</p>
+                <p>Direkte: +45 22100219</p>
+                <p><a href="https://partyvikings.dk">Webshop: www.PartyVikings.dk</a></p>
+            </div>
+        </div>
+
+        <div class="section_two">
+            <img class="logo" src="https://i.ibb.co/y4Fzr8f/party-vikings-dk-logo-stor-sort-2.png" alt="party-vikings-dk-logo-stor-sort-2">
+            <h4>VI ØNSKER AT GØRE VERDEN TIL ET SJOVERE STED!</h4>
+            <!-- Wrapper table for centering -->
+            <table class="some" align="center">
+                <tr>
+                    <td>
+                        <a href="https://www.tiktok.com"><img class="social" src="https://i.ibb.co/jg319V8/tiktok.png" alt="tiktok"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com"><img class="social" src="https://i.ibb.co/fx5DD0P/instagram.png" alt="instagram"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.facebook.com"><img class="social" src="https://i.ibb.co/pdQ132Q/facebook.png" alt="facebook"></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com"><img class="social" src="https://i.ibb.co/J2TY7ry/youtube.png" alt="youtube"></a>
+                    </td>
+                </tr>
+            </table>
         </div>
     </div>
-
-    <div class="section_two">
-        <img class="logo" src="img/party vikings_dk_logo_stor_sort (2).png" alt="Viking-logo">
-        <h4>VI ØNSKER AT GØRE VERDEN TIL ET SJOVERE STED!</h4>
-        <img class="some" src="img/SoMe.png" alt="SoMe-logo">
-    </div>   
-</div>
-</div>
 </body>
 </html>
+
 
 
 
